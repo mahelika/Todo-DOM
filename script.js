@@ -1,5 +1,9 @@
 let todos = [];
 let userName = prompt("What's your name?").trim(); 
+
+while(!userName){
+    userName = prompt("Please enter your name.").trim();
+}
 document.querySelector("#todoListTitle").innerText = `${userName}'s Todo List`; 
 
 
@@ -16,7 +20,7 @@ function addTodo(){
         render();
     }
     else {
-        alert ("Please enter your name.");
+        alert ("Please enter your Todo.");
     }
 }
 
