@@ -1,0 +1,86 @@
+body {
+    font-family: 'Quicksand', sans-serif; 
+    background-color: #e6f7ff; 
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+h1 {
+    color: #ff6f91; 
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #a0e7e5; 
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 300px; 
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3faffa;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffab8a;
+    color: #fff;
+    margin: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+button:hover {
+    background-color: #ff6f91;
+}
+
+#todos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#todos div {
+    background-color: #fff5d1; 
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 400px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+h1.todo-title {
+    margin: 0;
+    flex-grow: 1; 
+    padding-left: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        max-width: 90%; 
+    }
+
+    #todos div {
+        max-width: 90%; 
+    }
+}
